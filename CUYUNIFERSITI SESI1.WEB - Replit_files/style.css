@@ -1,0 +1,218 @@
+ {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: hwb(0 48% 49%);
+  background-color: rgb(255, 255, 255);
+  background-size: cover;
+  background-position-y: center;
+}
+
+a {
+  text-decoration: none;
+  color: #5798e2;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+button {
+  background-color: #05881b;
+  color: #1d3804;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4c4ec7;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #fff;
+}
+
+/* Section Styles */
+
+section {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#home {
+  background-image: url('C:\Users\User\Pictures\img1.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jasa Foto Wedding</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<!-- Header -->
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</Menu></a></li>
+				<li><a href="#about">Info</a></li>
+				<li><a href="#services">Layanan</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Kontak</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Home -->
+	<section id="home">
+		<h1>Jasa Foto Wedding Terbaik</h1>
+		<p>Kami menyediakan jasa foto wedding dengan kualitas terbaik dan harga yang kompetitif.</p>
+		<button>Hubungi Kami</button>
+	</section>
+
+	<!-- About -->
+	<section id="about">
+		<h1>Info</h1>
+		<p>Kami adalah tim fotografer profesional yang berpengalaman dalam mengabadikan momen-momen spesial,Soal harga bisa hubungi kontak yang ada.</p>
+	</section>
+
+	<!-- Services -->
+	<section id="services">
+		<h1>Layanan Kami</h1>
+		<ul>
+			<li>Foto Wedding</li>
+			<li>Foto Pre-Wedding</li>
+			<li>Foto Pernikahan</li>
+			<li>Foto Keluarga</li>
+		</ul>
+	</section>
+
+	<!-- Portfolio -->
+	<section id="portfolio">
+		<h1>Portfolio Kami</h1>
+		<div class="gallery">
+			<img src="C:\Users\User\Downloads\img8.jpeg" alt="Foto Wedding 1">
+			<img src="C:\Users\User\Downloads\img.jpeg" alt="Foto Wedding 2">
+			<img src="C:\Users\User\Downloads\07a585184d587bdad9aad90562eb92f3.jpg" alt="Foto Wedding 3">
+			<img src="C:\Users\User\Downloads\img.jpg" alt="Foto wedding 4">
+			<img src="C:\Users\User\Downloads\img5.jpg" alt="Foto wedding 5">
+			<img src="C:\Users\User\Downloads\imgca4.jpg" alt="foto wedding 6">
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section id="contact">
+		<h1>Kontak Kami</h1>
+		<p>Alamat: Jl.Kota Baru,desa suaraja,</p>
+		<p>Kecamatan Buay Madang,Kabupaten Ogan</p>
+		<p>Komering Ulu Timur,Sumatra Selatan</p>
+		<p>Telepon: 083835722969</p>
+		<p>Email: <a href="mailto:info@jasa-fotowedding.com">info@gentatpangki.com</a></p>
+		<form>
+			<label>Nama:</label>
+			<input type="text" name="nama">
+			<label>Email:</label>
+			<input type="email" name="email">
+			<label>Pesan:</label>
+			<textarea name="pesan"></textarea>
+			<button>Kirim</button>
+		</form>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<p>&copy; 2025 Jasa Foto Wedding</p>
+	</footer>
+</body>
+</html>
+
+#about, #services, #portfolio, #contact {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* Gallery Styles */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 30%;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Styles */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
